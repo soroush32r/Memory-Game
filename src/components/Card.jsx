@@ -1,9 +1,14 @@
 import qustionMarkImg from '.././../images/question-mark/question-mark.png'
 
-const Card = ({imagePath, isClicked}) => {
+const Card = ({id, imagePath, isClicked, isFind, handleGameStatus}) => {
+
+  const handleOnClick = () => {
+    handleGameStatus(id)
+  }
+
   return (
-    <div className="border border-black w-32 h-32 m-5">
-      <img src={isClicked ? imagePath : qustionMarkImg} className="w-full h-full" />
+    <div className={`border border-black w-32 h-32 m-5 ${isFind ? 'border-none' : ''}`} onClick={handleOnClick}>
+      <img src={isClicked ? imagePath : qustionMarkImg} className={`w-full h-full ${isFind ? 'hidden' : ''}`} />
     </div>
   )
 }

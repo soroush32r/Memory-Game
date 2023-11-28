@@ -5,9 +5,25 @@ import GameLogic from "./components/GameLogic"
 
 function App() {
   const [imageList, setImageList] = useState([])
-  
+
+  const showFirstTime = (images) => {
+    images.map((item) => {
+      item.isClicked = true
+      return item
+    })
+    setImageList(images)
+    setTimeout(() => {
+      const temp = images.map((item) => {
+        item.isClicked = false
+        return item
+      })
+      setImageList(temp)
+    }, 3000)
+  }
+
   useEffect(() => {
-    setImageList(GetData())
+    const images = GetData();
+    showFirstTime(images)
   },[])
   
 

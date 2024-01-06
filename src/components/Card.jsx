@@ -1,4 +1,4 @@
-import qustionMarkImg from '.././../images/question-mark/question-mark.png'
+import qustionMarkImg from '../../images/question-mark/question-mark.png'
 
 const Card = ({id, imagePath, isClicked, isFind, handleGameStatus}) => {
 

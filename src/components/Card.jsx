@@ -7,7 +7,7 @@ const Card = ({id, imagePath, isClicked, isFind, handleGameStatus}) => {
   }
 
   return (
-    <div className={`border border-black w-32 h-32 m-5 ${isFind ? 'border-none' : ''} ${!isClicked ? 'hover:bg-teal-50' : ''}`} onClick={handleOnClick}>
+    <div className={`border border-black w-20 h-20 m-2 md:w-32 md:h-32 md:m-5 ${isFind ? 'border-none' : ''} ${!isClicked ? 'hover:bg-teal-50' : ''}`} onClick={handleOnClick}>
       <img src={isClicked ? imagePath : qustionMarkImg} className={`w-full h-full ${isFind ? 'hidden' : ''}`} />
     </div>
   )

@@ -48,7 +48,7 @@ function App() {
         <button className="px-4 py-2 hover:bg-teal-300 rounded-md bg-teal-400" onClick={startGameHandler}>{isGameStarted? 'Reset' : 'Start'}</button>
       </div>
       <h1 className="text-2xl text-green-600 text-center">{winnerText}</h1>
-      <div className={`${isGameFinished ? 'hidden' : ''} grid grid-cols-6`}>
+      <div className={`${isGameFinished ? 'hidden' : ''} grid grid-cols-4 md:grid-cols-6`}>
         {imageList.map(({id, imagePath, isClicked, isFind}) => (
           <Card key={id} id={id} imagePath={imagePath} isClicked={isClicked} isFind={isFind} handleGameStatus={handleGameStatus} />
         ))}

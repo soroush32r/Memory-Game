@@ -1,16 +1,16 @@
 const imagePath = [
-  '../../images/Cars/benz-sclass.png',
-  '../../images/Cars/benz-sedan.png',
-  '../../images/Cars/benz-suv.png',
-  '../../images/Cars/bmw.png',
-  '../../images/Cars/classic-car-ford.png',
-  '../../images/Cars/ferrari.png',
-  '../../images/Cars/ford.png',
-  '../../images/Cars/lamborgini-huracan.png',
-  '../../images/Cars/lamborgini.png',
-  '../../images/Cars/mini-buick.png',
-  '../../images/Cars/tesla.png',
-  '../../images/Cars/classic-car.png'
+  '../../public/Cars/benz-sclass.png',
+  '../../public/Cars/benz-sedan.png',
+  '../../public/Cars/benz-suv.png',
+  '../../public/Cars/bmw.png',
+  '../../public/Cars/classic-car-ford.png',
+  '../../public/Cars/ferrari.png',
+  '../../public/Cars/ford.png',
+  '../../public/Cars/lamborgini-huracan.png',
+  '../../public/Cars/lamborgini.png',
+  '../../public/Cars/mini-buick.png',
+  '../../public/Cars/tesla.png',
+  '../../public/Cars/classic-car.png'
 ]
 
 

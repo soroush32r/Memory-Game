@@ -29,7 +29,7 @@ export default function GameLogic(temp, setImageList, setIsGameFinished, setWinn
           setWinnerText('(: !!! Congratulations You Win the Game !!! :)')
           setIsGameFinished(true)
         }
-      }, 1500)
+      }, 800)
     }
   } 
 

@@ -21,7 +21,7 @@ function App() {
         return item
       })
       setImageList(temp)
-    }, 3000)
+    }, 5000)
   }
 
   const startGameHandler = () => {
